@@ -1,0 +1,15 @@
+.container > a.navbar-brand {
+    display: block;
+}
+#navbarToggler > a.navbar-brand {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    .container > a.navbar-brand {
+        display: none;
+    }
+    #navbarToggler > a.navbar-brand {
+        display: block;
+    }
+}
