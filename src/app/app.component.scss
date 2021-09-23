@@ -4,6 +4,20 @@
 #navbarToggler > a.navbar-brand {
     display: none;
 }
+a.pet {
+    color: #1EB860;
+    text-decoration: none;
+    .fas {
+        color: #1EB860;
+    }
+}
+a.pet:hover {
+    text-decoration: underline;
+}
+.fab, .fas {
+    font-size: 1.62em;
+    color: #143047;
+}
 
 @media (min-width: 768px) {
     .container > a.navbar-brand {
