@@ -1,29 +1,61 @@
 .container > a.navbar-brand {
-    display: block;
+  display: block;
 }
 #navbarToggler > a.navbar-brand {
-    display: none;
+  display: none;
 }
 a.pet {
-    color: #1EB860;
-    text-decoration: none;
-    .fas {
-        color: #1EB860;
-    }
+  color: #1eb860;
+  text-decoration: none;
+  .fas {
+    color: #1eb860;
+  }
 }
 a.pet:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
-.fab, .fas {
-    font-size: 1.62em;
-    color: #143047;
+.fab,
+.fas {
+  font-size: 1.62em;
+  color: #143047;
 }
 
 @media (min-width: 768px) {
-    .container > a.navbar-brand {
-        display: none;
-    }
-    #navbarToggler > a.navbar-brand {
-        display: block;
-    }
+  .container > a.navbar-brand {
+    display: none;
+  }
+  #navbarToggler > a.navbar-brand {
+    display: block;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
