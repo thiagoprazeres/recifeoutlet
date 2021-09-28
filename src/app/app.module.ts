@@ -14,11 +14,16 @@ import { SwiperModule } from 'swiper/angular';
 import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { MapaLojasComponent } from './mapa-lojas/mapa-lojas.component';
-import { PrivilegeClubComponent } from './privilege-club/privilege-club.component';
 import { ContatoComponent } from './contato/contato.component';
 
 @NgModule({
-  declarations: [AppComponent, HomeComponent, SobreComponent, MapaLojasComponent, PrivilegeClubComponent, ContatoComponent],
+  declarations: [
+    AppComponent,
+    HomeComponent,
+    SobreComponent,
+    MapaLojasComponent,
+    ContatoComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,

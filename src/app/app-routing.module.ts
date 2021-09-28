@@ -3,14 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { SobreComponent } from './sobre/sobre.component';
 import { MapaLojasComponent } from './mapa-lojas/mapa-lojas.component';
-import { PrivilegeClubComponent } from './privilege-club/privilege-club.component';
 import { ContatoComponent } from './contato/contato.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
   { path: 'sobre', component: SobreComponent },
   { path: 'mapa-lojas', component: MapaLojasComponent },
-  { path: 'privilege-club', component: PrivilegeClubComponent },
   { path: 'contato', component: ContatoComponent },
 ];
 
