@@ -50,7 +50,24 @@
 </main>
 <section>
   <div class="container">
-    <swiper [slidesPerView]="4" [navigation]="true">
+    <swiper
+      [slidesPerView]="4"
+      [navigation]="true"
+      [breakpoints]="{
+        '@0.00': {
+          slidesPerView: 1
+        },
+        '@0.75': {
+          slidesPerView: 2
+        },
+        '@1.00': {
+          slidesPerView: 3
+        },
+        '@1.50': {
+          slidesPerView: 4
+        }
+      }"
+    >
       <ng-template swiperSlide>
         <img
           class="swiper-slide-image"
@@ -460,10 +477,10 @@
     </swiper>
   </div>
 </section>
-<section style="background: url(assets/roupas.png)">
+<section class="pt-5 pt-md-0" style="background: url(assets/roupas.png)">
   <div class="container">
     <div class="row">
-      <div class="col-6 text-center vertical-middle">
+      <div class="col-md-6 text-center vertical-middle">
         <h1
           class="mat-display-2 mb-0"
           style="font-weight: 900; color: white; width: 100%"
@@ -473,7 +490,7 @@
           O ANO INTEIRO
         </h1>
       </div>
-      <div class="col-6 py-5 text-center">
+      <div class="col-md-6 py-5 text-center">
         <img src="assets/70-off.png" alt="70% OFF" />
       </div>
     </div>
@@ -481,7 +498,7 @@
 </section>
 <div class="container pt-3">
   <div class="row">
-    <div id="noticias" class="col-6 px-5 pt-4 pb-4">
+    <div id="noticias" class="col-md-6 px-5 pt-4 pb-4">
       <swiper
         style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
         [autoplay]="{
@@ -519,7 +536,7 @@
         </ng-template>
       </swiper>
     </div>
-    <div id="privilegeclub" class="col-6 px-5 pt-5 pb-0">
+    <div id="privilegeclub" class="col-md-6 px-5 pt-5 pb-0">
       <div>
         <h1>Privilege Club</h1>
       </div>
@@ -531,7 +548,7 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-6 p-0 m-0">
+    <div class="col-md-6 p-0 m-0">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.201449228513!2d-35.0676966!3d-8.0963469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcd6babf37a7d0672!2sRecife%20Outlet!5e0!3m2!1spt-BR!2sbr!4v1632808649292!5m2!1spt-BR!2sbr"
         width="100%"
@@ -542,10 +559,10 @@
         style="margin-bottom: -6px"
       ></iframe>
     </div>
-    <div id="contato" class="col-6">
+    <div id="contato" class="col-md-6">
       <h2 class="ms-4 mt-3 mb-0">Contato</h2>
       <mat-list>
-        <a mat-list-item href="https://goo.gl/maps/8ZUY4QHQHwF1jNMH8">
+        <a mat-list-item href="https://goo.gl/maps/bUkEw44NosvrPn2DA">
           <mat-icon mat-list-icon>location_on</mat-icon>
           <div mat-line>UNIDADE IMBIRIBEIRA</div>
           <div mat-line>
