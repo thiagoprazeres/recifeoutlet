@@ -1,11 +1,10 @@
-import { Component, ViewEncapsulation, ViewChild } from '@angular/core';
-import { SwiperComponent } from 'swiper/angular';
+import { Component } from '@angular/core';
 
 // import Swiper core and required modules
-import SwiperCore, { Navigation } from 'swiper';
+import SwiperCore, { Autoplay, Pagination, Navigation } from 'swiper';
 
 // install Swiper modules
-SwiperCore.use([Navigation]);
+SwiperCore.use([Autoplay, Pagination, Navigation]);
 
 @Component({
   selector: 'app-root',

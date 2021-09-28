@@ -19,6 +19,32 @@ a.pet:hover {
   font-size: 1.62em;
   color: #143047;
 }
+.mat-stroked-button {
+  border-color: white !important;
+}
+#noticias {
+  background-image: url(../assets/bg-slide-marca.png);
+  background-size: cover;
+  * {
+    color: white;
+  }
+}
+#privilegeclub {
+  background-image: url(../assets/marca.png);
+  background-size: cover;
+  * {
+    color: white;
+  }
+}
+a {
+  text-decoration: none;
+}
+#contato {
+  background-color: #133149;
+  * {
+    color: #ffbd00;
+  }
+}
 
 @media (min-width: 768px) {
   .container > a.navbar-brand {
@@ -27,35 +53,4 @@ a.pet:hover {
   #navbarToggler > a.navbar-brand {
     display: block;
   }
-}
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
 }

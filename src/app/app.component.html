@@ -463,7 +463,7 @@
 <section style="background: url(assets/roupas.png)">
   <div class="container">
     <div class="row">
-      <div class="col-6 text-center" style="display: flex; align-items: center">
+      <div class="col-6 text-center vertical-middle">
         <h1
           class="mat-display-2 mb-0"
           style="font-weight: 900; color: white; width: 100%"
@@ -479,6 +479,93 @@
     </div>
   </div>
 </section>
+<div class="container pt-3">
+  <div class="row">
+    <div id="noticias" class="col-6 px-5 pt-4 pb-4">
+      <swiper
+        style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+        [autoplay]="{
+          delay: 2500
+        }"
+        [pagination]="{
+          clickable: true
+        }"
+      >
+        <ng-template swiperSlide>
+          <h1>Recife Outlet</h1>
+          <p>
+            Traga sua marca para um lugar com o PIB per capita entre os maiores
+            do Nordeste e que atrai milhões de turistas o ano inteiro
+          </p>
+          <p><a href="#" mat-stroked-button>Leia mais</a></p>
+        </ng-template>
+        <ng-template swiperSlide>
+          <h1>Investimento de R$ 60 milhões em outlet em Pernambuco</h1>
+          <p>
+            Pernambuco terá o seu primeiro outlet a partir do 07 de maio de
+            2021, às margens da BR-232, a 20 quilômetros de distância do Marco
+            Zero, que fica no Centro da capital pernambucana.
+          </p>
+          <p><a href="#" mat-stroked-button>Leia mais</a></p>
+        </ng-template>
+        <ng-template swiperSlide>
+          <h1>Grupo BCI investe R$ 60 milhões na construção de outlet</h1>
+          <p>
+            O setor de outlets está em crescimento em todo o Brasil: com 13
+            unidades em operação e o faturamento anual das lojas desse segmento
+            gira em torno de R$ 4 bilhões.
+          </p>
+          <p><a href="#" mat-stroked-button>Leia mais</a></p>
+        </ng-template>
+      </swiper>
+    </div>
+    <div id="privilegeclub" class="col-6 px-5 pt-5 pb-0">
+      <div>
+        <h1>Privilege Club</h1>
+      </div>
+      <p>
+        Cadastre-se no site e faça parte do Privilege Club. Você vai ficar
+        sabendo de um mundo de novidades.
+      </p>
+      <p><a href="#" mat-stroked-button>Cadatre-se</a></p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-6 p-0 m-0">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15800.201449228513!2d-35.0676966!3d-8.0963469!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xcd6babf37a7d0672!2sRecife%20Outlet!5e0!3m2!1spt-BR!2sbr!4v1632808649292!5m2!1spt-BR!2sbr"
+        width="100%"
+        height="274"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        style="margin-bottom: -6px"
+      ></iframe>
+    </div>
+    <div id="contato" class="col-6">
+      <h2 class="ms-4 mt-3 mb-0">Contato</h2>
+      <mat-list>
+        <a mat-list-item href="https://goo.gl/maps/8ZUY4QHQHwF1jNMH8">
+          <mat-icon mat-list-icon>location_on</mat-icon>
+          <div mat-line>UNIDADE IMBIRIBEIRA</div>
+          <div mat-line>
+            Rodovia Luiz Gonzaga, BR-232, Km 20, Moreno - PE, 54800-000
+          </div>
+        </a>
+        <a mat-list-item href="tel:8130400613">
+          <mat-icon mat-list-icon>phone</mat-icon>
+          <div mat-line>Telefone</div>
+          <div mat-line>81 3040 0613</div>
+        </a>
+        <a mat-list-item href="mailto:contato@recifeoutlet.com.br">
+          <mat-icon mat-list-icon>mail</mat-icon>
+          <div mat-line>e-Mail</div>
+          <div mat-line>contato@recifeoutlet.com.br</div>
+        </a>
+      </mat-list>
+    </div>
+  </div>
+</div>
 <div class="container">
   <footer
     class="
