@@ -1,1 +1,79 @@
-<p>contato works!</p>
+<section class="py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Contato</h1>
+        <p class="lead">
+          Mande uma mensagem pelo formulário abaixo ou entre em contato conosco
+          via telefone ou e-mail.
+        </p>
+        <form
+          id="cardForm"
+          [formGroup]="cardForm"
+          (ngSubmit)="onSubmit(cardForm.value)"
+          [hidden]="carregando || pagamentoProcessado"
+        >
+          <p>
+            <mat-form-field color="primary" appearance="outline">
+              <mat-label>Seu nome</mat-label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                formControlName="nome"
+                matInput
+                placeholder="Seu nome"
+                required
+              />
+              <mat-icon color="primary" matSuffix>
+                sentiment_very_satisfied
+              </mat-icon>
+            </mat-form-field>
+            <br />
+            <mat-form-field color="primary" appearance="outline">
+              <mat-label>Seu e-mail</mat-label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                formControlName="email"
+                matInput
+                placeholder="Seu e-mail"
+              />
+              <mat-icon color="primary" matSuffix>mail</mat-icon>
+            </mat-form-field>
+            <br />
+            <mat-form-field color="primary" appearance="outline">
+              <mat-label>Seu telefone</mat-label>
+              <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                formControlName="telefone"
+                matInput
+                placeholder="Seu telefone"
+              />
+              <mat-icon color="primary" matSuffix>phone</mat-icon>
+            </mat-form-field>
+            <br />
+            <mat-form-field
+              color="primary"
+              appearance="outline"
+              style="width: 100%"
+            >
+              <mat-label>Mensagem</mat-label>
+              <textarea
+                matInput
+                placeholder="Digite aqui sua mensagem..."
+              ></textarea>
+            </mat-form-field>
+          </p>
+          <button color="accent" type="submit" mat-raised-button>Enviar</button>
+        </form>
+      </div>
+      <div id="contato" class="col-md-6">
+        <app-dados-contato></app-dados-contato>
+      </div>
+    </div>
+  </div>
+</section>

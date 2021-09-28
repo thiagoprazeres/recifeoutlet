@@ -1,0 +1,15 @@
+section {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 85%,
+    rgba(255, 189, 0, 1) 85%,
+    rgba(255, 189, 0, 1) 100%
+  );
+}
+mat-form-field {
+  min-width: 150px;
+  max-width: 350px;
+  width: 100%;
+}
