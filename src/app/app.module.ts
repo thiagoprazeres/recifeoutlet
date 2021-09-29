@@ -20,6 +20,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { MapaLojasComponent } from './mapa-lojas/mapa-lojas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { DadosContatoComponent } from './dados-contato/dados-contato.component';
+import { PetFriendlyComponent } from './pet-friendly/pet-friendly.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { DadosContatoComponent } from './dados-contato/dados-contato.component';
     MapaLojasComponent,
     ContatoComponent,
     DadosContatoComponent,
+    PetFriendlyComponent,
   ],
   imports: [
     BrowserModule,

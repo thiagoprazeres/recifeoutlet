@@ -27,11 +27,6 @@
             .st3 {
               fill: #e0e0e0;
             }
-            .st4 {
-              fill: #9d9d9d;
-              stroke: #ffffff;
-              stroke-miterlimit: 10;
-            }
           </style>
           <g id="Camada_4"></g>
           <g id="Camada_6">
@@ -332,6 +327,7 @@
               class="st4"
               width="50.9"
               height="80.7"
+              [attr.fill]="fillColor"
             ></rect>
             <polygon
               id="Carmen_Steffans"
@@ -763,73 +759,97 @@
             data-location="Ad_Fashion"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="AD"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/ad.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>AD</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li class="mapplic-list-location" data-location="Alleatory" style="">
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Alleatory"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/aleatory-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Alleatory</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Aramis"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Aramis"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/aramis-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Aramis</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Artex"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Artex"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/artex-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Artex</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Banca_Auto"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Banca Auto"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/banca-auto-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Banca Auto</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="PH_Burguer"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Bite Burguer"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -837,15 +857,18 @@
                 BB
               </div>
               <h4>Bite Burguer</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Brands_House"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Brands House"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -853,43 +876,54 @@
                 BH
               </div>
               <h4>Brands House</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Calvin_Klein"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Calvin Klein"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/calvin-klein-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Calvin Klein</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Carmen_Steffans"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Carmen Steffens"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/carmen-steffens-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Carmen Steffens</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Cheirin_Bão"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Cheirin Bão"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -897,15 +931,18 @@
                 CB
               </div>
               <h4>Cheirin Bão</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Chili_Brans"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Chili Beans"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -913,15 +950,18 @@
                 CB
               </div>
               <h4>Chili Beans</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Casa_Do_Sorvete"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Casa do Sorvete"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -929,57 +969,72 @@
                 CD
               </div>
               <h4>Casa do Sorvete</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Clube_Marisol"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Clube Marisol"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/clube-marisol-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Clube Marisol</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Constance"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Constance"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/constance-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Constance</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Crocs"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Crocs"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/crocs-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Crocs</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="deltacafe"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Delta Café"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -987,15 +1042,18 @@
                 DC
               </div>
               <h4>Delta Café</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Parmeggio"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Doçuda"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1003,57 +1061,72 @@
                 D
               </div>
               <h4>Doçuda</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Delta_Café"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Delta Café"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/delta.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Delta Café</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Diesel"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Diesel"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/diesel-2.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Diesel</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Drogamar"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Drogamar"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/drogamar-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Drogamar</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Fred_Chicken"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Fred Chicken"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1061,99 +1134,126 @@
                 FC
               </div>
               <h4>Fred Chicken</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Guess"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Guess"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/guess-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Guess</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Ingá_Vinhos"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Ingá Vinhos"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/ingá.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Ingá Vinhos</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Kipling"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Kipling"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/06/kipling-logo.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Kipling</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Levis"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Levis"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/levis-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Levis</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Live_x21_"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Live!"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/live-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Live!</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Mitchell"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Mitchell"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/mitchell-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Mitchell</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="MMartan"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="MMartan"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1161,57 +1261,72 @@
                 M
               </div>
               <h4>MMartan</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="New_Balance"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="New Balance"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/new-balance-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>New Balance</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="New_Era"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="New Era"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/newera.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>New Era</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Ocullum"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Oculum"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/oculum-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Oculum</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Polo_Wear"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Polo Wear"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1219,15 +1334,18 @@
                 PW
               </div>
               <h4>Polo Wear</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Sonho_dos_Colchões"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Sonhos dos Colchões"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1235,43 +1353,54 @@
                 SD
               </div>
               <h4>Sonhos dos Colchões</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Shineray_Motors"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Shineray Motors"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/shineray.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Shineray Motors</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Spicy"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Spicy"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/spicy-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Spicy</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Salsh_x26_Pão"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Salsh&amp;Pão"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1279,29 +1408,36 @@
                 S
               </div>
               <h4>Salsh&amp;Pão</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Surf_Co"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="SurfCo"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/surfco.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>SurfCo</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Time_Center"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Time Center"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1309,29 +1445,36 @@
                 TC
               </div>
               <h4>Time Center</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Tea_One"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Tea One"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/tea-one-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Tea One</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Comedoria_Telheiros"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Telheiro Grill"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1339,71 +1482,90 @@
                 TG
               </div>
               <h4>Telheiro Grill</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Tiptop"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Tip Top"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/tiptop.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Tip Top</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="TNG"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="TNG"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/tng-2.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>TNG</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Tommy_Hilfiger"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Tommy Hilfiger"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/tommy-hilfiger-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Tommy Hilfiger</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Trifil"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Trifil"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/trifil-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Trifil</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Urban"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Urban"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1411,29 +1573,36 @@
                 U
               </div>
               <h4>Urban</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Vagamundo"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Vagamundo"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/vagamundo-1.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Vagamundo</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Vivara"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Vivara"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1441,15 +1610,18 @@
                 V
               </div>
               <h4>Vivara</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Yes_Cosmét"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Yes Cosmétic"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><div
                 class="mapplic-thumbnail mapplic-thumbnail-placeholder"
                 aria-hidden="true"
@@ -1457,36 +1629,43 @@
                 YC
               </div>
               <h4>Yes Cosmétic</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="Zizane"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Zinzane"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/zizane.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>Zinzane</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
           <li
             class="mapplic-list-location"
             data-location="ZS_Autos"
             style="display: list-item"
           >
-            <a href="#"
+            <a
+              routerLink="/mapa-lojas"
+              fragment="ZS Autos"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
               ><img
                 src="http://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/zs.png"
                 alt="Location thumbnail"
-                class="mapplic-thumbnail" />
+                class="mapplic-thumbnail"
+              />
               <h4>ZS Autos</h4>
-              <span class="mapplic-about"></span
-            ></a>
+            </a>
           </li>
         </ol>
       </div>
