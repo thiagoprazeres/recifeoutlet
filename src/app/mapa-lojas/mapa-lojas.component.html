@@ -5,7 +5,7 @@
       <div class="col-md-8 order-md-2">
         <svg
           version="1.1"
-          id="Camada_1"
+          id="maparecifeoutlet"
           xmlns="http://www.w3.org/2000/svg"
           xmlns:xlink="http://www.w3.org/1999/xlink"
           x="0px"
@@ -327,7 +327,6 @@
               class="st4"
               width="50.9"
               height="80.7"
-              [attr.fill]="fillColor"
             ></rect>
             <polygon
               id="Carmen_Steffans"
@@ -1224,6 +1223,24 @@
                 class="mapplic-thumbnail"
               />
               <h4>Live!</h4>
+            </a>
+          </li>
+          <li
+            class="mapplic-list-location"
+            data-location="Live_x21_"
+            style="display: list-item"
+          >
+            <a
+              routerLink="/mapa-lojas"
+              fragment="Live!"
+              routerLinkActive="activebutton"
+              (click)="changeColor($event)"
+              ><img
+                src="../../assets/lojas/lojas-americanas.png"
+                alt="Location thumbnail"
+                class="mapplic-thumbnail"
+              />
+              <h4>Lojas Americanas</h4>
             </a>
           </li>
           <li

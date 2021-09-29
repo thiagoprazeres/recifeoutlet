@@ -1,12 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import * as bootstrap from 'bootstrap';
-
-var popoverTriggerList = [].slice.call(
-  document.querySelectorAll('[data-bs-toggle="popover"]')
-);
-var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-  return new bootstrap.Popover(popoverTriggerEl);
-});
 
 @Component({
   selector: 'app-mapa-lojas',
@@ -14,19 +6,26 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
   styleUrls: ['./mapa-lojas.component.scss'],
 })
 export class MapaLojasComponent implements OnInit {
-  fillColor = 'rgb(33, 33, 33)';
+  fillColor = 'gray';
 
   constructor() {}
 
   ngOnInit(): void {}
 
   changeColor(e: any) {
+    const id = 'maparecifeoutlet';
+    const classe = 'st4';
     const query = e.target.innerText;
-    console.log(query);
-    const r = Math.floor(Math.random() * 256);
-    const g = Math.floor(Math.random() * 256);
-    const b = Math.floor(Math.random() * 256);
-    this.fillColor = `rgb(${r}, ${g}, ${b})`;
+    const mapasvg = document.getElementById(id);
+    const lojas = document.querySelectorAll('.st4');
+    if (lojas) {
+      lojas.forEach((l) => {
+        l.setAttribute('fill', 'gray');
+      });
+    }
+    const loja = document.getElementById('Lojas_Americanas');
+    if (loja) loja.style.fill = '#ffdc04';
+    // console.log(lojas.length);
   }
   selectLoja(loja: string) {
     console.log(loja);
