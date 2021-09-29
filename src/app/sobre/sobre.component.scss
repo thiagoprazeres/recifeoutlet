@@ -1,0 +1,18 @@
+section {
+  color: white;
+  img.img-fluid {
+    position: relative;
+    right: -72px;
+  }
+}
+section > div.container {
+  background-color: #94c120;
+}
+.card {
+  background-color: #ffbd00;
+  color: #ffffff;
+  border: none;
+  h2.card-title {
+    line-height: 20px;
+  }
+}
