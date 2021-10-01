@@ -35,10 +35,9 @@ export class MapaLojasComponent implements OnInit {
   }
 
   changeColor(lojaId: string) {
-    const id = 'maparecifeoutlet';
-    const classe = 'st4';
-    const mapasvg = document.getElementById(id);
-    const lojas = document.querySelectorAll('.st4');
+    // const id = 'maparecifeoutlet';
+    const classe = '.st4';
+    const lojas = document.querySelectorAll(classe);
     if (lojas) {
       lojas.forEach((l) => {
         l.setAttribute('fill', 'gray');
