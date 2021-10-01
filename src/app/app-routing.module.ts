@@ -12,6 +12,11 @@ const routes: Routes = [
   { path: 'mapa-lojas', component: MapaLojasComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'pet-friendly', component: PetFriendlyComponent },
+  {
+    path: 'noticias',
+    loadChildren: () =>
+      import('./noticias/noticias.module').then((m) => m.NoticiasModule),
+  },
 ];
 
 @NgModule({
