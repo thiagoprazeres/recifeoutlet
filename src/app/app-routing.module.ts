@@ -8,7 +8,7 @@ import { PetFriendlyComponent } from './pet-friendly/pet-friendly.component';
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+    component: SobreComponent,
   },
   { path: 'sobre', component: SobreComponent },
   { path: 'mapa-lojas', component: MapaLojasComponent },
