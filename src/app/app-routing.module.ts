@@ -7,7 +7,10 @@ import { ContatoComponent } from './contato/contato.component';
 import { PetFriendlyComponent } from './pet-friendly/pet-friendly.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  {
+    path: '',
+    loadChildren: () => import('./home/home.module').then((m) => m.HomeModule),
+  },
   { path: 'sobre', component: SobreComponent },
   { path: 'mapa-lojas', component: MapaLojasComponent },
   { path: 'contato', component: ContatoComponent },

@@ -1,7 +1,0 @@
-[build]
-  command = "nx build web —prod && yarn run scully"
-  publish = "dist/static"
-[[redirects]]
-  from="/*"
-  to="/index.html"
-  status=200
