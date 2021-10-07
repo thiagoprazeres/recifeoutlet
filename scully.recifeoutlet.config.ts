@@ -11,4 +11,5 @@ export const config: ScullyConfig = {
       },
     },
   },
+  puppeteerLaunchOptions: { executablePath: CHROMIUM_PATH },
 };
