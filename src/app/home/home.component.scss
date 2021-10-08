@@ -1,0 +1,44 @@
+.mat-stroked-button {
+  border-color: white !important;
+}
+#noticias {
+  background-image: url(../../assets/bg-slide-marca.png);
+  background-size: cover;
+  * {
+    color: white;
+  }
+}
+section#instagram {
+  background-color: #ffca00;
+  div > h2 > a {
+    color: #004e8a;
+    text-decoration: none;
+  }
+  div > h2 > a:hover {
+    text-decoration: underline;
+  }
+  iframe {
+    height: 192px;
+  }
+}
+@media (min-width: 576px) {
+  section#instagram {
+    iframe {
+      height: 272px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  section#instagram {
+    iframe {
+      height: 362px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  section#instagram {
+    iframe {
+      height: 586px;
+    }
+  }
+}
