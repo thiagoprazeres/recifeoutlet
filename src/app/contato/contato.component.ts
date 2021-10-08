@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-contato',
@@ -12,7 +13,12 @@ export class ContatoComponent implements OnInit {
   carregando = false;
   mensagemSucesso = false;
 
-  constructor(private formBuilder: FormBuilder, private http: HttpClient) {
+  constructor(
+    private titleService: Title,
+    private formBuilder: FormBuilder,
+    private http: HttpClient
+  ) {
+    this.titleService.setTitle('Contato');
     this.cardForm = this.formBuilder.group({
       nome: ['', Validators.required],
       email: ['', Validators.required],

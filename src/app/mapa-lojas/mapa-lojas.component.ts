@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-mapa-lojas',
@@ -9,7 +10,9 @@ import { ActivatedRoute } from '@angular/router';
 export class MapaLojasComponent implements OnInit {
   fillColor = 'gray';
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(private route: ActivatedRoute, private titleService: Title) {
+    this.titleService.setTitle('Lojas');
+  }
 
   ngOnInit(): void {
     const preLink = 'link';

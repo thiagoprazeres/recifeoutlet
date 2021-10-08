@@ -1,9 +1,5 @@
 section {
   color: white;
-  img.img-fluid {
-    position: relative;
-    right: -72px;
-  }
 }
 section > div.container {
   background-color: #94c120;
@@ -14,5 +10,13 @@ section > div.container {
   border: none;
   h2.card-title {
     line-height: 20px;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  section img.img-fluid {
+    position: relative;
+    right: -72px;
   }
 }

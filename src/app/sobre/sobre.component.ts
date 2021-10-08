@@ -1,15 +1,15 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-sobre',
   templateUrl: './sobre.component.html',
-  styleUrls: ['./sobre.component.scss']
+  styleUrls: ['./sobre.component.scss'],
 })
 export class SobreComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor(private titleService: Title) {
+    this.titleService.setTitle('Sobre');
   }
 
+  ngOnInit(): void {}
 }
