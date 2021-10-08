@@ -9,14 +9,15 @@ import { HttpClient } from '@angular/common/http';
 })
 export class ContatoComponent implements OnInit {
   cardForm;
-  carregando = true;
-  pagamentoProcessado = false;
+  carregando = false;
+  mensagemSucesso = false;
 
   constructor(private formBuilder: FormBuilder, private http: HttpClient) {
     this.cardForm = this.formBuilder.group({
       nome: ['', Validators.required],
       email: ['', Validators.required],
       telefone: ['', Validators.required],
+      mensagem: ['', Validators.required],
     });
   }
 
@@ -31,16 +32,17 @@ export class ContatoComponent implements OnInit {
       nome: cardData.nome,
       email: cardData.email,
       telefone: cardData.telefone,
+      mensagem: cardData.mensagem,
     };
     console.log(lead);
-    this.http.post('inserir_lead.php', lead).subscribe(
+    this.http.post('contato.php', lead).subscribe(
       (res: any) => {
         console.log('res', res);
         this.carregando = false;
-        this.pagamentoProcessado = true;
+        this.mensagemSucesso = true;
       },
       (err) => {
-        console.error(err);
+        console.error('Deu erro', err);
         this.carregando = false;
       },
       () => (this.carregando = false)

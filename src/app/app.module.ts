@@ -22,6 +22,8 @@ import { ContatoComponent } from './contato/contato.component';
 import { DadosContatoComponent } from './dados-contato/dados-contato.component';
 import { PetFriendlyComponent } from './pet-friendly/pet-friendly.component';
 
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -45,6 +47,7 @@ import { PetFriendlyComponent } from './pet-friendly/pet-friendly.component';
     MatFormFieldModule,
     MatInputModule,
     ReactiveFormsModule,
+    MatProgressSpinnerModule,
   ],
   providers: [Title, { provide: LOCALE_ID, useValue: 'pt-BR' }],
   bootstrap: [AppComponent],
