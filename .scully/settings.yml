@@ -1,2 +1,11 @@
 identifier: k5u88a1etdt65dkd
 allowErrorCollect: true
+appPort: 1864
+staticPort: 1668
+reloadPort: 2667
+hostName: localhost
+projectName: recifeoutlet
+homeFolder: /home/thiago/web/recifeoutlet
+distFolder: dist/recifeoutlet
+outDir: /home/thiago/web/recifeoutlet/dist/static
+handle404: ''
