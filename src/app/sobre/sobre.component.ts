@@ -8,7 +8,7 @@ import { Title } from '@angular/platform-browser';
 })
 export class SobreComponent implements OnInit {
   constructor(private titleService: Title) {
-    this.titleService.setTitle('Sobre');
+    this.titleService.setTitle('Sobre nós');
   }
 
   ngOnInit(): void {}
