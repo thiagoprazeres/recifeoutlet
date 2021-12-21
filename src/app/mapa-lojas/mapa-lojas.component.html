@@ -547,7 +547,7 @@
             ></polygon>
             <polygon
               id="Hering"
-              class="st4"
+              class="st4 mapplic-clickable"
               points="793.6,203.4 798.4,246.2 823.3,243.3 827.7,280.5 776.9,285.6 768.2,206.1"
               routerLink="/mapa-lojas"
               fragment="Hering"
@@ -601,14 +601,23 @@
               fragment="MMartan"
             ></rect>
             <rect
-              id="Aeropostale"
+              id="Loja123"
               x="967.3"
               y="49.8"
               class="st4"
-              width="51.2"
+              width="25"
+              height="80.7"
+              fragment="Loja123"
+            ></rect>
+            <rect
+              id="Rabithos"
+              x="993"
+              y="49.8"
+              class="st4 mapplic-clickable"
+              width="26"
               height="80.7"
               routerLink="/mapa-lojas"
-              fragment="Aeropostale"
+              fragment="Rabithos"
             ></rect>
             <rect
               id="Shineray_Motors"
@@ -732,9 +741,8 @@
             ></rect>
             <polygon
               id="Tea_One"
-              class="st4 mapplic-clickable"
+              class="st4"
               points="603.5,246.2 610,252.5 616.8,246.2 610,239.3"
-              routerLink="/mapa-lojas"
               fragment="Tea_One"
             ></polygon>
             <rect
@@ -744,7 +752,6 @@
               class="st4"
               width="9.7"
               height="9.9"
-              routerLink="/mapa-lojas"
               fragment="Sweet_Acai"
             ></rect>
             <polygon
@@ -1265,7 +1272,7 @@
               <h4>Guess</h4>
             </a>
           </li>
-          <!-- <li
+          <li
             class="mapplic-list-location"
             data-location="Hering"
             style="display: list-item"
@@ -1278,7 +1285,7 @@
               />
               <h4>Hering</h4>
             </a>
-          </li> -->
+          </li>
           <li
             class="mapplic-list-location"
             data-location="Icare"
@@ -1530,6 +1537,20 @@
           </li>
           <li
             class="mapplic-list-location"
+            data-location="Rabithos"
+            style="display: list-item"
+          >
+            <a routerLink="/mapa-lojas" fragment="Rabithos" id="linkRabithos"
+              ><img
+                src="../../assets/lojas/rabithos.jpeg"
+                alt="Location thumbnail"
+                class="mapplic-thumbnail"
+              />
+              <h4>Rabithos</h4>
+            </a>
+          </li>
+          <li
+            class="mapplic-list-location"
             data-location="Salsh_x26_Pão"
             style="display: list-item"
           >
@@ -1609,24 +1630,7 @@
               <h4>SurfCo</h4>
             </a>
           </li>
-          <li
-            class="mapplic-list-location"
-            data-location="Sweet_Acai"
-            style="display: list-item"
-          >
-            <a
-              routerLink="/mapa-lojas"
-              fragment="Sweet_Acai"
-              id="linkSweet_Acai"
-              ><div
-                class="mapplic-thumbnail mapplic-thumbnail-placeholder"
-                aria-hidden="true"
-              >
-                SA
-              </div>
-              <h4>Sweet Açaí</h4>
-            </a>
-          </li>
+
           <li
             class="mapplic-list-location"
             data-location="Time_Center"
@@ -1643,20 +1647,6 @@
                 TC
               </div>
               <h4>Time Center</h4>
-            </a>
-          </li>
-          <li
-            class="mapplic-list-location"
-            data-location="Tea_One"
-            style="display: list-item"
-          >
-            <a routerLink="/mapa-lojas" fragment="Tea_One" id="linkTea_One"
-              ><img
-                src="https://www.recifeoutlet.com.br/web/wp-content/uploads/2021/04/tea-one-1.png"
-                alt="Location thumbnail"
-                class="mapplic-thumbnail"
-              />
-              <h4>Tea One</h4>
             </a>
           </li>
           <li
