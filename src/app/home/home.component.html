@@ -1,9 +1,20 @@
 <main>
-  <img
-    src="../../assets/banners/Vacinacao-Recife-Outlet.png"
-    class="img-fluid"
-    alt="Vacinação npm install -g @angular/cliRecife Outlet"
-  />
+  <swiper [slidesPerView]="1" [navigation]="true">
+    <ng-template swiperSlide>
+      <img
+        src="../../assets/banners/Vacinacao-Recife-Outlet.png"
+        class="img-fluid"
+        alt="Vacinação Recife Outlet"
+      />
+    </ng-template>
+    <ng-template swiperSlide>
+      <img
+        src="../../assets/banners/Inauguracao-Parcao-Recife-Outlet.png"
+        class="img-fluid"
+        alt="Inauguração Parcão Recife Outlet"
+      />
+    </ng-template>
+  </swiper>
 </main>
 <section>
   <div class="container">
