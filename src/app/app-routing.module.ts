@@ -5,6 +5,7 @@ import { SobreComponent } from './sobre/sobre.component';
 import { MapaLojasComponent } from './mapa-lojas/mapa-lojas.component';
 import { ContatoComponent } from './contato/contato.component';
 import { PetFriendlyComponent } from './pet-friendly/pet-friendly.component';
+import { RegulamentoParcaoComponent } from './regulamento-parcao/regulamento-parcao.component';
 
 const routes: Routes = [
   {
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'mapa-lojas', component: MapaLojasComponent },
   { path: 'contato', component: ContatoComponent },
   { path: 'pet-friendly', component: PetFriendlyComponent },
+  { path: 'regulamento-parcao', component: RegulamentoParcaoComponent },
   {
     path: 'noticias',
     loadChildren: () =>

@@ -23,6 +23,7 @@ import { DadosContatoComponent } from './dados-contato/dados-contato.component';
 import { PetFriendlyComponent } from './pet-friendly/pet-friendly.component';
 
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { RegulamentoParcaoComponent } from './regulamento-parcao/regulamento-parcao.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     ContatoComponent,
     DadosContatoComponent,
     PetFriendlyComponent,
+    RegulamentoParcaoComponent,
   ],
   imports: [
     BrowserModule,
